@@ -7,8 +7,8 @@ import utils.Connection;
 import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException {
-        String id = "2";
-        String body = "ipsum dolor sit amet";
+        String id = "3";
+        String body = "hello";
         String index = "demo";
 
         //Connecting to elastic service.

@@ -13,7 +13,7 @@ public class elasticsearchService {
         IndexRequest indexRequest = new IndexRequest(index);
         indexRequest.id(id);
         indexRequest.source("body",body);
-        IndexResponse indexResponse = client.index(indexRequest, RequestOptions.DEFAULT);
+        client.index(indexRequest, RequestOptions.DEFAULT);
         System.out.println("Inserted data with id: " + id + ", body: " + body);
     }
     public boolean checkIfIndexExists(RestHighLevelClient client, String indexName) throws IOException {
